@@ -28,3 +28,8 @@ function addProjectDetails(e) {
 
 	console.log("User clicked on project " + idNumber);
 }
+
+function callback(result) {
+	#('div.project#' + result + '.details').html();
+}
+//var url = $.get("/project/" + idNumber, callBackFn);
